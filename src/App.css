@@ -1,0 +1,47 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #aaa;
+}
+
+body.dark-mode .text-dark-mode {
+  color: #f1f1f1;
+}
+
+body.light-mode .text-dark-mode {
+  color: #222;
+}
+
+body.dark-mode .btn-light-mode {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+body.light-mode .btn-light-mode {
+  background-color: #0d6efd;
+  color: #fff;
+  border: 1px solid #0d6efd;
+  transition: all 0.3s ease;
+}
