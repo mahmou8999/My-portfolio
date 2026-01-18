@@ -6,7 +6,7 @@ import Contact from './components/contact';
 import About from "./components/About";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
 
 function App() {

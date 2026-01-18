@@ -4,7 +4,6 @@ import "./home.css";
 
 function Home({ darkMode }) {
   const [fullImage, setFullImage] = useState(false);
-  const [viewCV, setViewCV] = useState(false);
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -16,6 +15,15 @@ function Home({ darkMode }) {
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/MyCV.pdf";
+    link.download = "Mahmoud_Rabie_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -34,6 +42,7 @@ function Home({ darkMode }) {
             onClick={() => setFullImage(true)}
           />
         </div>
+
         <div className="flex-fill text-center text-lg-start">
           <h1 className="mb-3">Mahmoud Rabie</h1>
           <h3 className="mb-4">Front-End Developer</h3>
@@ -45,6 +54,7 @@ function Home({ darkMode }) {
             code, elegant design, and continuous learning to deliver
             high-quality digital experiences.
           </p>
+
           <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
             <button
               className={`btn ${
@@ -54,29 +64,23 @@ function Home({ darkMode }) {
             >
               Contact Me
             </button>
+
             <button
               className={`btn ${
                 darkMode ? "btn-outline-light" : "btn-primary text-white"
               }`}
-              onClick={() => setViewCV(true)}
+              onClick={downloadCV}
             >
-              View CV
+              Download CV
             </button>
           </div>
         </div>
       </div>
+
       {fullImage && (
         <div className="image-modal" onClick={() => setFullImage(false)}>
           <img src="me.jpg" alt="Full Profile" className="full-image" />
           <button className="close-btn" onClick={() => setFullImage(false)}>
-            ×
-          </button>
-        </div>
-      )}
-      {viewCV && (
-        <div className="image-modal" onClick={() => setViewCV(false)}>
-          <iframe src="/My CV.pdf" title="CV" className="cv-viewer"></iframe>
-          <button className="close-btn" onClick={() => setViewCV(false)}>
             ×
           </button>
         </div>
