@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaWhatsapp, FaInstagram, FaGithub } from "react-icons/fa";
-import "./Footer.css";
+import "./footer.css";
 
 function Footer({ darkMode }) {
   return (
