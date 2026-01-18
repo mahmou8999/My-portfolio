@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import Projects from "./components/projects";
 import Contact from './components/contact';
 import About from "./components/About";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
