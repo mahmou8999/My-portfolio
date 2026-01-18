@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaEnvelope, FaPhone, FaGithub, FaLinkedin } from "react-icons/fa";
-import "./Contact.css";
+import "./contact.css";
 
 function Contact({ darkMode }) {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
