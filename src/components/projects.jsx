@@ -60,7 +60,7 @@ function Projects({ darkMode }) {
       description:
         "A responsive website for a beautiful shop built with React & Bootstrap.",
       images: [
-        "/sh",
+        "/shop-easy-1.png",
         "/shop-easy-2.png",
         "/shop-easy-3.png",
         "/shop-easy-4.png",
